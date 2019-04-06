@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadSuperbOwlNamer", "BadSuperbOwlNamer\BadSuperbOwlNamer.csproj", "{906593E2-EC6F-4CA7-8612-47EE1A3A2703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadSuperbOwlNamer.Tests", "BadSuperbOwlNamer.Tests\BadSuperbOwlNamer.Tests.csproj", "{D440A021-D7C2-4A74-8B64-E16313A920D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{906593E2-EC6F-4CA7-8612-47EE1A3A2703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{906593E2-EC6F-4CA7-8612-47EE1A3A2703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{906593E2-EC6F-4CA7-8612-47EE1A3A2703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D440A021-D7C2-4A74-8B64-E16313A920D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D440A021-D7C2-4A74-8B64-E16313A920D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D440A021-D7C2-4A74-8B64-E16313A920D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D440A021-D7C2-4A74-8B64-E16313A920D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
