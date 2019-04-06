@@ -11,7 +11,7 @@ namespace BadSuperbOwlNamer
             try
             {
                 input = int.Parse(Console.ReadLine());
-                var romanNumeral = new SuperbOwlNamer().romanNumeraler(input);
+                var romanNumeral = new SuperbOwlNamer().indexOfDecimalPlaces(input);
                 Console.WriteLine($"Your Superb Owl's name is {romanNumeral}. Press Enter to Exit.");
                 Console.ReadLine();
             }
