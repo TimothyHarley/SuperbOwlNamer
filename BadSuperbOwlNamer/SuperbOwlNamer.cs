@@ -11,17 +11,25 @@ namespace BadSuperbOwlNamer
         {
             string name = "";
 
+
             if (stuffToRomanify <= 3)
             {
                 name = oneToThree(stuffToRomanify, name);
                 return name;
             }
-            else
+            else if (stuffToRomanify == 4)
             {
-                return "V";
+                return "IV";
             }
-
-
+            else if (stuffToRomanify <= 8)
+            {
+                int remainder = stuffToRomanify - 5;
+                name = "V" + oneToThree(remainder, name);
+                return name;
+            } else
+            {
+                return "IX";
+            }
         }
 
         public string oneToThree(int number, string name)
