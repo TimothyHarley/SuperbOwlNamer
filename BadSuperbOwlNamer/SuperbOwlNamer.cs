@@ -63,24 +63,24 @@ namespace BadSuperbOwlNamer
         {
             string name = "";
 
-            if (stuffToRomanify <= 30)
+            if (stuffToRomanify <= 3)
             {
-                name = oneToThree(stuffToRomanify, name);
+                name = tenToThirty(stuffToRomanify, name);
                 return name;
             }
             else if (stuffToRomanify == 4)
             {
-                return "IV";
+                return "XL";
             }
             else if (stuffToRomanify <= 8)
             {
                 int remainder = stuffToRomanify - 5;
-                name = "V" + oneToThree(remainder, name);
+                name = "L" + tenToThirty(remainder, name);
                 return name;
             }
             else if (stuffToRomanify == 9)
             {
-                return "IX";
+                return "XC";
             }
             else
             {
@@ -93,6 +93,15 @@ namespace BadSuperbOwlNamer
             for (int i = 0; i < number; i++)
             {
                 name += "I";
+            }
+            return name;
+        }
+
+        public string tenToThirty(int number, string name)
+        {
+            for (int i = 0; i < number; i++)
+            {
+                name += "X";
             }
             return name;
         }

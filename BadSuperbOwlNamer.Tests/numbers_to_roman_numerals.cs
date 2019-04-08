@@ -10,7 +10,16 @@ namespace BadSuperbOwlNamer.Tests
          [InlineData(5,"V")]
          [InlineData(9, "IX")]
          [InlineData(12, "XII")]
-                 public void number_x_should_be_roman_numeral_y(int input, string expectedResult)
+         [InlineData(16, "XVI")]
+         [InlineData(29, "XXIX")]
+         [InlineData(44, "XLIV")]
+         [InlineData(45, "XLV")]
+         [InlineData(68, "LXVIII")]
+         [InlineData(83, "LXXXIII")]
+         [InlineData(97,"XCVII")]
+         [InlineData(99, "XCIX")]
+         [InlineData(500, "D")]
+        public void number_x_should_be_roman_numeral_y(int input, string expectedResult)
         {
             //Arrange
             var superbOwl = new SuperbOwlNamer();
