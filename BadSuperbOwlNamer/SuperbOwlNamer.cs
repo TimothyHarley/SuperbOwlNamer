@@ -13,30 +13,49 @@ namespace BadSuperbOwlNamer
         {
             var numberArray = userInputNumber.ToString().ToCharArray();
 
-            var numberInOnesPlace = int.Parse(numberArray[numberArray.Length - 1].ToString());
-            var numberInTensPlace = int.Parse(numberArray[numberArray.Length - 2].ToString());
-            var numberInHundredsPlace = int.Parse(numberArray[numberArray.Length - 3].ToString());
-            var numberInThousandsPlace = int.Parse(numberArray[numberArray.Length - 4].ToString());
-
-            var romanifyOnes = romanNumeraler1(numberInOnesPlace);
-            var romanifyTens = romanNumeraler10(numberInTensPlace);
-            var romanifyHundreds = romanNumeraler100(numberInHundredsPlace);
-            var romanifyThousands = romanNumeraler1000(numberInThousandsPlace);
-
             if (numberArray.Length == 1)
             {
+                var numberInOnesPlace = int.Parse(numberArray[numberArray.Length - 1].ToString());
+
+                var romanifyOnes = romanNumeraler1(numberInOnesPlace);
+
                 return romanifyOnes;
             }
             else if (numberArray.Length == 2)
             {
+                var numberInOnesPlace = int.Parse(numberArray[numberArray.Length - 1].ToString());
+                var numberInTensPlace = int.Parse(numberArray[numberArray.Length - 2].ToString());
+
+                var romanifyOnes = romanNumeraler1(numberInOnesPlace);
+                var romanifyTens = romanNumeraler10(numberInTensPlace);
+
                 return romanifyTens + romanifyOnes;
             }
             else if (numberArray.Length == 3)
             {
+                var numberInOnesPlace = int.Parse(numberArray[numberArray.Length - 1].ToString());
+                var numberInTensPlace = int.Parse(numberArray[numberArray.Length - 2].ToString());
+                var numberInHundredsPlace = int.Parse(numberArray[numberArray.Length - 3].ToString());
+
+                var romanifyOnes = romanNumeraler1(numberInOnesPlace);
+                var romanifyTens = romanNumeraler10(numberInTensPlace);
+                var romanifyHundreds = romanNumeraler100(numberInHundredsPlace);
+
                 return romanifyHundreds + romanifyTens + romanifyOnes;
             }
             else if (numberArray.Length == 4)
             {
+                var numberInOnesPlace = int.Parse(numberArray[numberArray.Length - 1].ToString());
+                var numberInTensPlace = int.Parse(numberArray[numberArray.Length - 2].ToString());
+                var numberInHundredsPlace = int.Parse(numberArray[numberArray.Length - 3].ToString());
+                var numberInThousandsPlace = int.Parse(numberArray[numberArray.Length - 4].ToString());
+
+                var romanifyOnes = romanNumeraler1(numberInOnesPlace);
+                var romanifyTens = romanNumeraler10(numberInTensPlace);
+                var romanifyHundreds = romanNumeraler100(numberInHundredsPlace);
+                var romanifyThousands = romanNumeraler1000(numberInThousandsPlace);
+
+
                 return romanifyThousands + romanifyHundreds + romanifyTens + romanifyOnes;
             }
             else
